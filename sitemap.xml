@@ -16,6 +16,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>http://acm-hrbust-wiki.github.io/Base/sort/快速排序/</loc>
+     <lastmod>2019-12-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://acm-hrbust-wiki.github.io/Base/sort/归并排序/</loc>
+     <lastmod>2019-12-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>http://acm-hrbust-wiki.github.io/Base/枚举/</loc>
      <lastmod>2019-12-21</lastmod>
      <changefreq>daily</changefreq>
