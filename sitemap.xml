@@ -1,127 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/</loc>
+     <loc>https://hrbust-acm.online/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/home/</loc>
+     <loc>https://hrbust-acm.online/home/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/faq/</loc>
+     <loc>https://hrbust-acm.online/faq/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Base/</loc>
+     <loc>https://hrbust-acm.online/markdown-model/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Base/sort/快速排序/</loc>
+     <loc>https://hrbust-acm.online/Base/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Base/sort/归并排序/</loc>
+     <loc>https://hrbust-acm.online/Base/sort/快速排序/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Base/枚举/</loc>
+     <loc>https://hrbust-acm.online/Base/sort/归并排序/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Base/贪心/</loc>
+     <loc>https://hrbust-acm.online/Base/枚举/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Search/</loc>
+     <loc>https://hrbust-acm.online/Base/贪心/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Search/DFS/</loc>
+     <loc>https://hrbust-acm.online/Search/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Search/BFS/</loc>
+     <loc>https://hrbust-acm.online/Search/DFS/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/DP/</loc>
+     <loc>https://hrbust-acm.online/Search/BFS/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/DP/背包DP/</loc>
+     <loc>https://hrbust-acm.online/DP/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/DP/区间DP/</loc>
+     <loc>https://hrbust-acm.online/DP/背包DP/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/DP/树形DP/</loc>
+     <loc>https://hrbust-acm.online/DP/区间DP/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Graph/</loc>
+     <loc>https://hrbust-acm.online/DP/树形DP/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Graph/拓扑排序/</loc>
+     <loc>https://hrbust-acm.online/Graph/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Graph/最小生成树/</loc>
+     <loc>https://hrbust-acm.online/Graph/拓扑排序/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Data_Structure/</loc>
+     <loc>https://hrbust-acm.online/Graph/最小生成树/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Data_Structure/线段树/</loc>
+     <loc>https://hrbust-acm.online/Data_Structure/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Data_Structure/树状数组/</loc>
+     <loc>https://hrbust-acm.online/Data_Structure/线段树/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Math/</loc>
+     <loc>https://hrbust-acm.online/Data_Structure/树状数组/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/String/</loc>
+     <loc>https://hrbust-acm.online/Math/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Geometry/</loc>
+     <loc>https://hrbust-acm.online/String/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://acm-hrbust-wiki.github.io/Others/</loc>
+     <loc>https://hrbust-acm.online/Geometry/</loc>
+     <lastmod>2019-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hrbust-acm.online/Others/</loc>
      <lastmod>2019-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
