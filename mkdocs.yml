@@ -2,12 +2,12 @@
 site_name: Hrbust_ACM's Wiki
 site_description: Hrbust_ACM's Wiki
 site_author: Hrbust_Acmer
-site_url: http://acm-hrbust-wiki.github.io
+site_url: https://hrbust-acm.online
 strict: true
 
 # Repository
-repo_name: 'acm-hrbust-wiki/acm-hrbust-wiki.github.io'
-repo_url: 'https://github.com/acm-hrbust-wiki/acm-hrbust-wiki.github.io'
+repo_name: 'acm-hrbust-wiki/wiki'
+repo_url: 'https://github.com/acm-hrbust-wiki/wiki/tree/master'
 edit_uri: 'docs/'
 
 nav:
@@ -15,6 +15,7 @@ nav:
     - Getting Started: index.md
     - Wiki介绍: home.md
     - 如何使用: faq.md
+    - MarkDown模板: markdown-model.md
   - 算法基础:
     - 算法基础简介: Base/index.md
     - 排序:
