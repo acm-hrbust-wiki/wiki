@@ -13,7 +13,8 @@ edit_uri: 'docs/'
 nav:
   - 首页:
     - Getting Started: index.md
-    - 使用介绍: home.md
+    - Wiki介绍: home.md
+    - 如何使用: faq.md
   - 算法基础:
     - 算法基础简介: Base/index.md
     - 排序:
