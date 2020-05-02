@@ -83,8 +83,25 @@ nav:
     # - 其他部分简介: Others/index.md
     - 时间/空间复杂度: Others/Time.md
     - 习题: Others/exem.md
-
-
+  - 2019年暑假集训题解汇编:
+    - Codeforces:
+      - GYM 102012H 贪心+扫描线: 2019/Codeforces/GYM 102012H.md
+      - GYM 101981M exkmp+manacher: 2019/Codeforces/GYM 101981M.md
+      - Codeforces 505D 构造+拓扑+bfs: 2019/Codeforces/Codeforces 505D.md
+    - POJ:
+      - POJ 1401 线段相交: 2019/POJ/POJ 1401.md
+      - POJ 1156 基础线段几何+最短路: 2019/POJ/POJ 1156.md
+    - HDU:
+      - HDU 4465 期望+精度控制: 2019/HDU/HDU 4465.md
+      - HDU 4474 BFS: 2019/HDU/HDU 4474.md
+    - ZOJ:
+      - ZOJ 4114 DP: 2019/ZOJ/ZOJ 4114.md
+    - 计蒜客:
+      - 计蒜客 39272 树链剖分+线段树: 2019/计蒜客/计蒜客 39272.md
+    - BZOJ:
+      - BZOJ 1069 点集中求四点最大面积: 2019/BZOJ/BZOJ 1069.md
+    # - LOJ:
+    # - 区域赛:
 # Theme
 theme:
   name: material
