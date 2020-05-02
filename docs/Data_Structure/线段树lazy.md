@@ -1,0 +1,108 @@
+```c++
+///poj3468 题意：n 个数，m 次操作，每次区间加上一个数，区间查询和
+#include <bits/stdc++.h>
+using namespace std;
+#define rep(i, j, k) for (int i = j; i <= k; i++)
+#define debug puts("*");
+const int N = 220;
+int n, cnt, t = 1;
+struct node
+{
+    int l, r, cnt;
+    double len;
+} tree[N << 2];
+struct knode
+{
+    double x1, y1, y2;
+    int k;
+    friend bool operator<(knode a, knode b)
+    {
+        return a.x1 < b.x1;
+    }
+} line[N];
+double raw[N], b[N], val[N];
+void discrete()
+{
+    sort(raw + 1, raw + 2 * n + 1);
+    // rep(i,1,2*n)cout<<raw[i]<<" ";puts("");
+    rep(i, 1, 2 * n) if (i == 1 || raw[i] != raw[i - 1])
+        b[++cnt] = raw[i];
+    // rep(i,1,cnt)cout<<b[i]<<" ";
+}
+int findx(double x)
+{
+    return lower_bound(b + 1, b + cnt + 1, x) - b;
+}
+void pushup(int rt, int l, int r)
+{
+    if (tree[rt].cnt)
+    {
+        tree[rt].len = b[r + 1] - b[l];
+    }
+    else if (l != r)
+    {
+        tree[rt].len = tree[rt << 1].len + tree[rt << 1 | 1].len;
+    }
+    else
+        tree[rt].len = 0;
+    return;
+}
+void build(int rt, int l, int r)
+{
+    tree[rt].l = l, tree[rt].r = r;
+    28 tree[rt].len = 0.0;
+    tree[rt].cnt = 0;
+    // cout<<l<<" "<<r<<endl;
+    if (l == r)
+        return;
+    int mid = (l + r) >> 1;
+    build(rt << 1, l, mid);
+    build(rt << 1 | 1, mid + 1, r);
+}
+void update(int rt, int l, int r, int x)
+{
+    if (l <= tree[rt].l && tree[rt].r <= r)
+    {
+        tree[rt].cnt += x;
+        pushup(rt, tree[rt].l, tree[rt].r);
+        return;
+    }
+    int mid = (tree[rt].l + tree[rt].r) >> 1; ///2
+    if (l <= mid)
+        update(rt << 1, l, r, x);
+    if (r > mid)
+        update(rt << 1 | 1, l, r, x);
+    pushup(rt, tree[rt].l, tree[rt].r);
+}
+int main()
+{
+    while (~scanf("%d", &n))
+    {
+        if (!n)
+            break;
+        cnt = 0; /// 1
+        rep(i, 1, n)
+        {
+            double x1, y1, x2, y2;
+            scanf("%lf%lf%lf%lf", &x1, &y1, &x2, &y2);
+            raw[i * 2 - 1] = y1, raw[i * 2] = y2;
+            line[i * 2 - 1].x1 = x1, line[i * 2 - 1].y1 = y1, line[i * 2 - 1].y2 = y2;
+            line[i * 2 - 1].k = 1;
+            line[i * 2].x1 = x2, line[i * 2].y1 = y1, line[i * 2].y2 = y2;
+            line[i * 2].k = -1;
+        }
+        discrete();
+        sort(line + 1, line + 2 * n + 1);
+        double ans = 0;
+        build(1, 1, cnt);
+        rep(i, 1, 2 * n)
+        {
+            ans += tree[1].len * (line[i].x1 - line[i - 1].x1);
+            update(1, findx(line[i].y1), findx(line[i].y2) - 1, line[i].k);
+        }
+        printf("Test case #%d\nTotal explored area: %.2lf\n\n", t++, ans);
+    }
+}
+```
+
+整理人：计 18-8 杨睿

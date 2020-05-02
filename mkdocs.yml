@@ -15,39 +15,74 @@ nav:
     - Getting Started: index.md
     - Wiki介绍: home.md
     - 如何使用: faq.md
-    - MarkDown模板: markdown-model.md
-  - 算法基础:
-    - 算法基础简介: Base/index.md
-    - 排序:
-      - 快速排序: Base/sort/快速排序.md
-      - 归并排序: Base/sort/归并排序.md
-    - 枚举: Base/枚举.md
-    - 贪心: Base/贪心.md
+    # - MarkDown模板: markdown-model.md
+  # - 算法基础:
+  #   - 算法基础简介: Base/index.md
+  #   - 排序:
+  #     - 快速排序: Base/sort/快速排序.md
+  #     - 归并排序: Base/sort/归并排序.md
+  #   - 枚举: Base/枚举.md
+  #   - 贪心: Base/贪心.md
   - 搜索:
-    - 搜索部分简介: Search/index.md
-    - DFS: Search/DFS.md
-    - BFS: Search/BFS.md
+    # - 搜索部分简介: Search/index.md
+    - 深度优先搜索: Search/DFS.md
+    - 广度优先搜索: Search/BFS.md
+    - 双向搜索: Search/DeSearch.md
+    - 记忆化搜索: Search/Memory_Search.md
+    - 极大极小化搜索: Search/极大极小搜索-alpha-beta剪枝.md
   - 动态规划:
-    - 动态规划部分简介: DP/index.md
-    - 背包 DP: DP/背包DP.md
-    - 区间 DP: DP/区间DP.md
+    # - 动态规划部分简介: DP/index.md
+    - 状态压缩DP: DP/状压DP.md
     - 树形 DP: DP/树形DP.md
+    - 区间 DP: DP/区间DP.md
+    - 数位 DP: DP/数位DP.md
+    - 概率 DP: DP/概率DP.md
+    - 期望 DP: DP/期望DP.md  
+  - 数据结构: 
+    # - 数据结构部分简介: Data_Structure/index.md
+    - 一维树状数组: Data_Structure/树状数组1.md
+    - 二维树状数组: Data_Structure/树状数组2.md
+    - ST表: Data_Structure/ST.md
+    - RMQ: Data_Structure/RMQ.md
+    - 线段树:
+      - 线段树lazy标记: Data_Structure/线段树lazy.md
+      - 线段树区间合并: Data_Structure/线段树区间合并.md
+      - 扫描线: Data_Structure/扫描线.md
+    - 树链剖分:
+      - 点剖: Data_Structure/点刨.md
+      - 边剖: Data_Structure/边剖.md
+    - 分块算法: Data_Structure/分块.md
+    - 莫队算法: Data_Structure/莫队.md
+    - 点分治: Data_Structure/点分治.md
   - 图论:
-    - 图论部分简介: Graph/index.md
-    - 拓扑排序: Graph/拓扑排序.md
-    - 最小生成树: Graph/最小生成树.md
-  - 数据结构:
-    - 数据结构部分简介: Data_Structure/index.md
-    - 线段树: Data_Structure/线段树.md
-    - 树状数组: Data_Structure/树状数组.md
-  - 数论:
-    - 数论部分简介: Math/index.md
+    - 二分图:
+      - 匈牙利算法: Graph/匈牙利算法.md
+      - KM 算法: Graph/KM算法.md
+    - 网络流:
+      - EK 算法: Graph/EK.md
+      - Dinic+当前弧优化: Graph/Dinic.md
+      - ISAP算法: Graph/ISAP.md
+    - 费用流:
+      - SPFA 费用流: Graph/SPFA费用流.md
+    # - 拓扑排序: Graph/拓扑排序.md
+    # - 最小生成树: Graph/最小生成树.md
+  # - 数论:
+  #   # - 数论部分简介: Math/index.md
   - 字符串:
-    - 字符串部分简介: String/index.md
+    # - 字符串部分简介: String/index.md
+    - 字典树: String/字典树.md
+    - AC自动机: String/AC自动机.md
+
   - 计算几何:
-    - 计算几何部分简介: Geometry/index.md
-  - 其他:
-    - 其他部分简介: Others/index.md
+    # - 计算几何部分简介: Geometry/index.md
+    - 点积叉积的运用: Geometry/点积叉积的运用.md
+    - 凸包的求取: Geometry/凸包的求取.md
+    - 半平面交: Geometry/半平面交.md
+    - 旋转卡壳: Geometry/旋转卡壳.md
+  - 附录:
+    # - 其他部分简介: Others/index.md
+    - 时间/空间复杂度: Others/Time.md
+    - 习题: Others/exem.md
 
 
 # Theme
@@ -62,8 +97,8 @@ theme:
   feature:
     tabs: true  # 横向导航
   font:
-    text: 'Fira Mono'
-    code: 'Fira Mono'
+    text: 'Roboto'
+    code: 'Roboto Mono'
 
 extra_javascript:
   - 'https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
