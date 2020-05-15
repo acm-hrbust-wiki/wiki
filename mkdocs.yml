@@ -30,6 +30,7 @@ nav:
     - 双向搜索: Search/DeSearch.md
     - 记忆化搜索: Search/Memory_Search.md
     - 极大极小化搜索: Search/极大极小搜索-alpha-beta剪枝.md
+    - 启发式搜索: Search/启发式搜索.md
   - 动态规划:
     # - 动态规划部分简介: DP/index.md
     - 状态压缩DP: DP/状压DP.md
@@ -83,38 +84,38 @@ nav:
     # - 其他部分简介: Others/index.md
     - 时间/空间复杂度: Others/Time.md
     - 习题: Others/exem.md
-  - 2019年暑假集训题解汇编:
-    - Codeforces:
-      - GYM 102012H 贪心+扫描线: 2019/Codeforces/GYM 102012H.md
-      - GYM 101981M exkmp+manacher: 2019/Codeforces/GYM 101981M.md
-      - Codeforces 505D 构造+拓扑+bfs: 2019/Codeforces/Codeforces 505D.md
-      - GYM 100837F 竞赛树+状态压缩DP: 2019/Codeforces/GYM 100837F.md
-      - GYM 101161G 矩阵快速幂优化DP: 2019/Codeforces/GYM 101161G.md
-    - POJ:
-      - POJ 1401 线段相交: 2019/POJ/POJ 1401.md
-      - POJ 1156 基础线段几何+最短路: 2019/POJ/POJ 1156.md
-    - HDU:
-      - HDU 4465 期望+精度控制: 2019/HDU/HDU 4465.md
-      - HDU 4474 BFS: 2019/HDU/HDU 4474.md
-      - HDU 5534 完全背包: 2019/HDU/HDU 5534.md
-      - HDU 6562 硬核线段树: 2019/HDU/HDU 6562.md
-    - ZOJ:
-      - ZOJ 4114 DP: 2019/ZOJ/ZOJ 4114.md
-      - ZOJ 4027 构造+拓扑+bfs: 2019/ZOJ/ZOJ 4027.md
-      - ZOJ 4028 LIS: 2019/ZOJ/ZOJ 4028.md
-      - ZOJ 4122 Dijkstra+删边+欧拉路: 2019/ZOJ/ZOJ 4122.md
-      - ZOJ 3937 树上dfs+斜率优化DP+可持久化维护凸壳: 2019/ZOJ/ZOJ 3937.md
-    - 计蒜客:
-      - 计蒜客 39272 树链剖分+线段树: 2019/计蒜客/计蒜客39272.md
-      - 计蒜客 A1998 分块+前缀和+二分: 2019/计蒜客/计蒜客A1998.md
-      - 计蒜客 A1617 线段树+二分图匹配Hall定理+尺取: 2019/计蒜客/计蒜客A1617.md
-      - 计蒜客 A1607 前缀线性基: 2019/计蒜客/计蒜客A1607.md
-    - BZOJ:
-      - BZOJ 1069 点集中求四点最大面积: 2019/BZOJ/BZOJ 1069.md
-    - 牛客网:
-      - 牛客49-E 线性基: 2019/牛客网/牛客49-E.md
-    - LOJ: 
-      - LOJ 6062 线段树+二分图匹配Hall定理: 2019/LOJ/LOJ 6062.md
+  # - 2019年暑假集训题解汇编:
+  #   - Codeforces:
+  #     - GYM 102012H 贪心+扫描线: 2019/Codeforces/GYM 102012H.md
+  #     - GYM 101981M exkmp+manacher: 2019/Codeforces/GYM 101981M.md
+  #     - Codeforces 505D 构造+拓扑+bfs: 2019/Codeforces/Codeforces 505D.md
+  #     - GYM 100837F 竞赛树+状态压缩DP: 2019/Codeforces/GYM 100837F.md
+  #     - GYM 101161G 矩阵快速幂优化DP: 2019/Codeforces/GYM 101161G.md
+  #   - POJ:
+  #     - POJ 1401 线段相交: 2019/POJ/POJ 1401.md
+  #     - POJ 1156 基础线段几何+最短路: 2019/POJ/POJ 1156.md
+  #   - HDU:
+  #     - HDU 4465 期望+精度控制: 2019/HDU/HDU 4465.md
+  #     - HDU 4474 BFS: 2019/HDU/HDU 4474.md
+  #     - HDU 5534 完全背包: 2019/HDU/HDU 5534.md
+  #     - HDU 6562 硬核线段树: 2019/HDU/HDU 6562.md
+  #   - ZOJ:
+  #     - ZOJ 4114 DP: 2019/ZOJ/ZOJ 4114.md
+  #     - ZOJ 4027 构造+拓扑+bfs: 2019/ZOJ/ZOJ 4027.md
+  #     - ZOJ 4028 LIS: 2019/ZOJ/ZOJ 4028.md
+  #     - ZOJ 4122 Dijkstra+删边+欧拉路: 2019/ZOJ/ZOJ 4122.md
+  #     - ZOJ 3937 树上dfs+斜率优化DP+可持久化维护凸壳: 2019/ZOJ/ZOJ 3937.md
+  #   - 计蒜客:
+  #     - 计蒜客 39272 树链剖分+线段树: 2019/计蒜客/计蒜客39272.md
+  #     - 计蒜客 A1998 分块+前缀和+二分: 2019/计蒜客/计蒜客A1998.md
+  #     - 计蒜客 A1617 线段树+二分图匹配Hall定理+尺取: 2019/计蒜客/计蒜客A1617.md
+  #     - 计蒜客 A1607 前缀线性基: 2019/计蒜客/计蒜客A1607.md
+  #   - BZOJ:
+  #     - BZOJ 1069 点集中求四点最大面积: 2019/BZOJ/BZOJ 1069.md
+  #   - 牛客网:
+  #     - 牛客49-E 线性基: 2019/牛客网/牛客49-E.md
+  #   - LOJ: 
+  #     - LOJ 6062 线段树+二分图匹配Hall定理: 2019/LOJ/LOJ 6062.md
     # - 区域赛:
 # Theme
 theme:
