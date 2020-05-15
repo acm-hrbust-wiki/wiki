@@ -7,7 +7,7 @@ strict: true
 
 # Repository
 repo_name: 'acm-hrbust-wiki/wiki'
-repo_url: 'https://github.com/acm-hrbust-wiki/wiki/tree/master'
+repo_url: 'https://github.com/acm-hrbust-wiki/wiki/tree'
 edit_uri: 'docs/'
 
 nav:
@@ -136,7 +136,11 @@ extra_javascript:
   - 'https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-\.]+'
+      prebuild_index: true
+  - minify:
+      minify_html: true
   - git-revision-date-localized:
       type: iso_datetime
 
