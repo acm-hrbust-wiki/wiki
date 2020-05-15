@@ -137,17 +137,14 @@ extra_javascript:
 
 plugins:
   - search:
-      separator: '[\s\-\.]+'
-      prebuild_index: true
-  - minify:
-      minify_html: true
-  - git-revision-date-localized:
-      type: iso_datetime
+      lang:
+        - jp
 
 # Customization
-extra:
-  search:
-    language: 'jp'
+# extra:
+#   - search:
+#     language: 'jp'
+  # manifest: 'manifest.webmanifest'
   # disqus: 'acm-hrbust-wiki'
   # copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
   # pagetime: 'on'
