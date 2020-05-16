@@ -25,12 +25,12 @@ nav:
   #   - 贪心: Base/贪心.md
   - 搜索:
     # - 搜索部分简介: Search/index.md
-    - 深度优先搜索: Search/DFS.md
-    - 广度优先搜索: Search/BFS.md
-    - 双向搜索: Search/DeSearch.md
-    - 记忆化搜索: Search/Memory_Search.md
-    - 极大极小化搜索: Search/极大极小搜索-alpha-beta剪枝.md
-    - 启发式搜索: Search/启发式搜索.md
+    - 深度优先搜索: S/DFS.md
+    - 广度优先搜索: S/BFS.md
+    - 双向搜索: S/DeSearch.md
+    - 记忆化搜索: S/Memory_Search.md
+    - 极大极小化搜索: S/极大极小搜索-alpha-beta剪枝.md
+    - 启发式搜索: S/启发式搜索.md
   - 动态规划:
     # - 动态规划部分简介: DP/index.md
     - 状态压缩DP: DP/状压DP.md

@@ -13,7 +13,7 @@
         <meta name="description" content="Hrbust_ACM's Wiki">
       
       
-        <link rel="canonical" href="https://hrbust-acm.online/Search/Memory_Search/">
+        <link rel="canonical" href="https://hrbust-acm.online/S/DeSearch/">
       
       
         <meta name="author" content="Hrbust_Acmer">
@@ -42,7 +42,7 @@
     
     
       
-        <title>记忆化搜索 - Hrbust_ACM's Wiki</title>
+        <title>双向搜索 - Hrbust_ACM's Wiki</title>
       
     
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                记忆化搜索
+                双向搜索
               
             </span>
           
@@ -449,18 +449,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../DeSearch/" title="双向搜索" class="md-nav__link">
-      双向搜索
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -469,10 +457,22 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="记忆化搜索" class="md-nav__link md-nav__link--active">
-      记忆化搜索
+    <a href="./" title="双向搜索" class="md-nav__link md-nav__link--active">
+      双向搜索
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Memory_Search/" title="记忆化搜索" class="md-nav__link">
+      记忆化搜索
+    </a>
   </li>
 
         
@@ -1165,12 +1165,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/acm-hrbust-wiki/wiki/tree/docs/Search/Memory_Search.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/acm-hrbust-wiki/wiki/tree/docs/S/DeSearch.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>记忆化搜索</h1>
+                  <h1>双向搜索</h1>
                 
-                <p>// 一般来说搜索的结果数量有限，因此在搜索时，会把搜到的结果也记录到一个数组， 下次可以直接使用。</p>
+                <p>// 对于单向搜索有 <span><span class="MathJax_Preview">2^n</span><script type="math/tex">2^n</script></span> 可能的情况，若从起始点和终点同时搜，可以变成 2 个 <span><span class="MathJax_Preview">2^{(n/2)}</span><script type="math/tex">2^{(n/2)}</script></span>种可能，然后进行合并。例如：每次操作可以选择*a 或者+b，问数字从 n 开始操作 40 次 变成 m 的可能性有多少种。可以选择正向反向同时求出 <span><span class="MathJax_Preview">2^{20}</span><script type="math/tex">2^{20}</script></span> 个答案，然后进行合并。</p>
 <div class="admonition check">
 <p class="admonition-title">整理人</p>
 <p>计 16-1 刘明辉</p>
@@ -1196,7 +1196,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../DeSearch/" title="双向搜索" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../BFS/" title="广度优先搜索" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1205,19 +1205,19 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                双向搜索
+                广度优先搜索
               </span>
             </div>
           </a>
         
         
-          <a href="../%E6%9E%81%E5%A4%A7%E6%9E%81%E5%B0%8F%E6%90%9C%E7%B4%A2-alpha-beta%E5%89%AA%E6%9E%9D/" title="极大极小化搜索" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Memory_Search/" title="记忆化搜索" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                极大极小化搜索
+                记忆化搜索
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
